@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "homeTitle": "STORM Car Wash Kazanlak — self-service 24/7",
+    "homeDescription": "STORM Car Wash in Kazanlak. Self-service 24 hours and a staffed wash. Directions, hours, prices.",
+    "selfServiceTitle": "Self-service 24/7 — STORM Car Wash Kazanlak",
+    "selfServiceDescription": "Five self-service bays in Kazanlak. Pay with coins or card. Eight programs on the panel.",
+    "staffedTitle": "Staffed wash — STORM Car Wash Kazanlak",
+    "staffedDescription": "Two staffed bays in Kazanlak. Leave the car — the team washes it.",
+    "contactTitle": "Contact — STORM Car Wash Kazanlak",
+    "contactDescription": "Location, hours and an enquiry form for STORM Car Wash in Kazanlak."
+  },
+  "header": {
+    "logoAlt": "STORM Car Wash",
+    "language": "Language"
+  },
+  "openNow": {
+    "staffedOpen": "Team on site until {close}",
+    "staffedClosed": "Team finished — bays still open",
+    "selfServiceAlways": "Self-service is open"
+  },
+  "hero": {
+    "headline": "Open at 3 in the morning.",
+    "subline": "Self-service 24 hours · Kazanlak",
+    "directions": "Directions"
+  },
+  "price": {
+    "heroAmount": "€{amount}",
+    "everyProgram": "every program"
+  },
+  "programs": {
+    "pre-wash": {
+      "name": "Pre-wash",
+      "detail": "high-pressure detergent"
+    },
+    "touchless-gel": {
+      "name": "Touchless gel",
+      "detail": ""
+    },
+    "turbo-foam": {
+      "name": "Turbo foam",
+      "detail": ""
+    },
+    "rinse": {
+      "name": "Rinse",
+      "detail": ""
+    },
+    "nano-wax": {
+      "name": "Nano wax",
+      "detail": ""
+    },
+    "short-water": {
+      "name": "Short water",
+      "detail": ""
+    },
+    "multi-wash": {
+      "name": "Multi wash",
+      "detail": "water – detergent – water"
+    },
+    "gloss-osmosis": {
+      "name": "Gloss – osmosis",
+      "detail": ""
+    }
+  },
+  "paths": {
+    "selfService": {
+      "title": "Wash it yourself",
+      "meta": "{bays} bays · 24 hours",
+      "hrefLabel": "Self-service"
+    },
+    "staffed": {
+      "title": "Or leave it with us",
+      "meta": "{bays} bays · {open}–{close}",
+      "hrefLabel": "Staffed wash"
+    }
+  },
+  "location": {
+    "heading": "Find us",
+    "directions": "Directions",
+    "mapTitle": "Map of STORM Car Wash in Kazanlak"
+  },
+  "footer": {
+    "facebook": "Facebook",
+    "language": "Language"
+  },
+  "hours": {
+    "selfServiceLabel": "Self-service",
+    "staffedLabel": "With team",
+    "always": "24 hours, every day",
+    "range": "{open}–{close}",
+    "daysUnconfirmed": "days of the week still unconfirmed"
+  },
+  "selfService": {
+    "title": "Wash it yourself",
+    "lead": "Five bays. No waiting for staff. Pay and pick a program.",
+    "howHeading": "How it works",
+    "step1Title": "Park in a free bay",
+    "step1Body": "If a bay is free, pull in and switch off.",
+    "step2Title": "Pay with coins or card",
+    "step2Body": "The panel takes {coins} coins and card.",
+    "step3Title": "Pick a program",
+    "step3Body": "Most programs share one price. Exceptions are marked below.",
+    "programsHeading": "The eight programs",
+    "durationPending": "minutes at this price",
+    "guideHeading": "First time here?",
+    "guideLead": "About a minute. No long manual.",
+    "guide1": "Park so the lance reaches all sides.",
+    "guide2": "Insert a coin or tap a card. Credit shows on the panel.",
+    "guide3": "Start with pre-wash, then gel or foam, then rinse. Wax and osmosis if you want gloss.",
+    "guide4": "Short water is a finish, not a full wash.",
+    "vacuumsHeading": "Vacuums",
+    "vacuumsBody": "{count} vacuum cleaners next to the bays.",
+    "hoursHeading": "Hours"
+  },
+  "staffed": {
+    "title": "Leave it with us",
+    "lead": "Two staffed bays. You wait — we wash.",
+    "servicesHeading": "Services and prices",
+    "car": "Car",
+    "suv": "SUV",
+    "van": "Van",
+    "bookingHeading": "Do you need to book?",
+    "hoursHeading": "Team hours",
+    "formHeading": "Write to us"
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Call, write, or just come.",
+    "phoneLabel": "Phone",
+    "hoursHeading": "Hours",
+    "formHeading": "Enquiry"
+  },
+  "form": {
+    "name": "Name",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send",
+    "sending": "Sending…",
+    "success": "Got it. We'll be in touch.",
+    "error": "Didn't send. Call or try again.",
+    "honeypot": "Leave empty",
+    "required": "Fill in this field."
+  },
+  "photos": {
+    "dvor": "Yard at STORM Car Wash in Kazanlak",
+    "selfService": "Self-service bays",
+    "staffed": "Staffed bays"
+  },
+  "a11y": {
+    "skip": "Skip to content"
+  }
+}
