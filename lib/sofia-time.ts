@@ -38,8 +38,12 @@ export function parseHm(value: string): number {
 }
 
 export function isStaffedOpen(now: Date = new Date()): boolean {
+  const days = hours.staffed.days;
+  if (!hours.staffed.daysConfirmed || days === null) {
+    return false;
+  }
   const clock = getSofiaClock(now);
-  if (!(hours.staffed.days as readonly Weekday[]).includes(clock.weekday)) {
+  if (!days.includes(clock.weekday)) {
     return false;
   }
   const open = parseHm(hours.staffed.open);
@@ -48,7 +52,11 @@ export function isStaffedOpen(now: Date = new Date()): boolean {
 }
 
 export function staffedSchemaDays() {
-  return hours.staffed.days.map((day) => SCHEMA_DAY[day]);
+  const days = hours.staffed.days;
+  if (!hours.staffed.daysConfirmed || days === null) {
+    return [];
+  }
+  return days.map((day) => SCHEMA_DAY[day]);
 }
 
 export function selfServiceSchemaDays() {

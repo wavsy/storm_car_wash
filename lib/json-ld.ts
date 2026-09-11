@@ -1,6 +1,6 @@
 import { business } from "@/content/business";
 import { hours } from "@/content/hours";
-import { selfServiceSchemaDays, staffedSchemaDays } from "@/lib/sofia-time";
+import { selfServiceSchemaDays } from "@/lib/sofia-time";
 import type { Locale } from "@/i18n/routing";
 
 export function localBusinessJsonLd(locale: Locale) {
@@ -11,7 +11,7 @@ export function localBusinessJsonLd(locale: Locale) {
     "@context": "https://schema.org",
     "@type": "AutoWash",
     name,
-    image: "/logo-storm.png",
+    image: "/brand/logo-full.png",
     url: locale === "en" ? "/en" : "/",
     sameAs: [business.facebookUrl],
     address: {
@@ -29,15 +29,8 @@ export function localBusinessJsonLd(locale: Locale) {
         "@type": "OpeningHoursSpecification",
         name: locale === "en" ? "Self-service" : "Самообслужване",
         dayOfWeek: selfServiceSchemaDays(),
-        opens: "00:00",
+        opens: hours.selfService.open,
         closes: "23:59",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        name: locale === "en" ? "Staffed" : "С екип",
-        dayOfWeek: staffedSchemaDays(),
-        opens: hours.staffed.open,
-        closes: hours.staffed.close,
       },
     ],
   };

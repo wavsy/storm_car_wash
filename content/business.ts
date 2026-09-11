@@ -10,7 +10,6 @@ export const business = {
   mapsUrl: "https://maps.app.goo.gl/uJ84F9tVYmijmLseA",
   facebookUrl: "https://www.facebook.com/profile.php?id=61577435788574",
   opened: "2026-03-26",
-  // Lat/lng resolved from the confirmed maps URL above — not a guessed pin.
   coordinates: {
     lat: 42.6096959,
     lng: 25.4075256,

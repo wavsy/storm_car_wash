@@ -23,8 +23,8 @@ export const hours = {
     alwaysOpen: false,
     open: "08:00",
     close: "17:00",
-    // Unconfirmed. Rendered as Mon–Fri until the client says otherwise.
-    days: ["mo", "tu", "we", "th", "fr"] as const satisfies readonly Weekday[],
+    // Days of week are NOT confirmed. Do not imply daily / Mon–Fri.
+    days: null as readonly Weekday[] | null,
     daysConfirmed: false,
   },
 };

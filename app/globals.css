@@ -1,27 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #243775;
-  --color-cyan: #00b5f8;
-  --color-cyan-text: #00a5e8;
-  --color-ice: #8eddfc;
+  --color-ink: #070b14;
+  --color-graphite: #1a2330;
+  --color-navy: #233774;
+  --color-cyan: #00b6f8;
+  --color-cyan-deep: #007ead;
+  --color-foam: #f7fbfd;
+  --color-steel: #8a93a3;
+  --color-stone: #c8ccd0;
   --font-heading: var(--font-geologica), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-commissioner), ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html {
-    color: var(--color-navy);
-    background: #fff;
+    color: var(--color-foam);
+    background: var(--color-ink);
     font-feature-settings: "locl" 1;
+    color-scheme: dark;
   }
 
   body {
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.45;
-    color: var(--color-navy);
-    background: #fff;
+    color: var(--color-foam);
+    background: var(--color-ink);
   }
 
   h1,
@@ -29,8 +34,8 @@
   h3 {
     font-family: var(--font-heading);
     font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
+    letter-spacing: -0.03em;
+    line-height: 0.98;
   }
 
   a {
@@ -39,8 +44,95 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-cyan-text);
+    outline: 2px solid var(--color-cyan);
     outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+@layer components {
+  .hero-sheen {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    mix-blend-mode: screen;
+  }
+
+  .hero-sheen::after {
+    content: "";
+    position: absolute;
+    top: -30%;
+    bottom: -30%;
+    width: 22%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(0 182 248 / 0.2),
+      transparent
+    );
+    animation: storm-sheen 9s ease-in-out infinite;
+  }
+
+  .gallery-stage {
+    perspective: 1400px;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(0 182 248 / 0.45) transparent;
+  }
+
+  .gallery-card {
+    transform-style: preserve-3d;
+  }
+
+  .gallery-shine {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 35%,
+      rgb(247 251 253 / 0.18) 48%,
+      transparent 62%
+    );
+    transform: translateX(-80%);
+    animation: storm-gallery-shine 7s ease-in-out infinite;
+    mix-blend-mode: screen;
+  }
+}
+
+@keyframes storm-sheen {
+  0%,
+  18% {
+    transform: translateX(-50%) skewX(-18deg);
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  48%,
+  100% {
+    transform: translateX(420%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+@keyframes storm-gallery-shine {
+  0%,
+  55% {
+    transform: translateX(-80%);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(130%);
+    opacity: 0;
   }
 }
 
@@ -53,4 +145,10 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  .hero-sheen::after,
+  .gallery-shine {
+    display: none;
+  }
 }
+

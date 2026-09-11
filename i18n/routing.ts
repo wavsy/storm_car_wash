@@ -7,18 +7,6 @@ export const routing = defineRouting({
   localeDetection: false,
   pathnames: {
     "/": "/",
-    "/self-service": {
-      bg: "/samoobsluzhvane",
-      en: "/self-service",
-    },
-    "/staffed": {
-      bg: "/s-ekip",
-      en: "/staffed",
-    },
-    "/contact": {
-      bg: "/kontakti",
-      en: "/contact",
-    },
   },
 });
 

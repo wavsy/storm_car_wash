@@ -12,22 +12,22 @@ export type ProgramId =
 
 export type Program = {
   id: ProgramId;
+  number: number;
   price: number;
   durationMinutes: Pending<number>;
-  enNameConfirmed: boolean;
 };
 
 export const DEFAULT_PROGRAM_PRICE = 1;
 
 export const programs: Program[] = [
-  { id: "pre-wash", price: 1, durationMinutes: null, enNameConfirmed: false },
-  { id: "touchless-gel", price: 1, durationMinutes: null, enNameConfirmed: false },
-  { id: "turbo-foam", price: 1, durationMinutes: null, enNameConfirmed: false },
-  { id: "rinse", price: 1, durationMinutes: null, enNameConfirmed: false },
-  { id: "nano-wax", price: 1, durationMinutes: null, enNameConfirmed: false },
-  { id: "short-water", price: 0.5, durationMinutes: null, enNameConfirmed: true },
-  { id: "multi-wash", price: 2, durationMinutes: null, enNameConfirmed: true },
-  { id: "gloss-osmosis", price: 1, durationMinutes: null, enNameConfirmed: false },
+  { id: "pre-wash", number: 1, price: 1, durationMinutes: null },
+  { id: "touchless-gel", number: 2, price: 1, durationMinutes: null },
+  { id: "turbo-foam", number: 3, price: 1, durationMinutes: null },
+  { id: "rinse", number: 4, price: 1, durationMinutes: null },
+  { id: "nano-wax", number: 5, price: 1, durationMinutes: null },
+  { id: "short-water", number: 6, price: 0.5, durationMinutes: null },
+  { id: "multi-wash", number: 7, price: 2, durationMinutes: null },
+  { id: "gloss-osmosis", number: 8, price: 1, durationMinutes: null },
 ];
 
 export const exceptionPrograms = programs.filter(

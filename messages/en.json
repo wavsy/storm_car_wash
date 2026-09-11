@@ -1,65 +1,85 @@
 {
   "meta": {
     "homeTitle": "STORM Car Wash Kazanlak — self-service 24/7",
-    "homeDescription": "STORM Car Wash in Kazanlak. Self-service 24 hours and a staffed wash. Directions, hours, prices.",
-    "selfServiceTitle": "Self-service 24/7 — STORM Car Wash Kazanlak",
-    "selfServiceDescription": "Five self-service bays in Kazanlak. Pay with coins or card. Eight programs on the panel.",
-    "staffedTitle": "Staffed wash — STORM Car Wash Kazanlak",
-    "staffedDescription": "Two staffed bays in Kazanlak. Leave the car — the team washes it.",
-    "contactTitle": "Contact — STORM Car Wash Kazanlak",
-    "contactDescription": "Location, hours and an enquiry form for STORM Car Wash in Kazanlak."
+    "homeDescription": "STORM Car Wash in Kazanlak. Self-service 24 hours and a staffed wash. Directions, hours, prices."
   },
   "header": {
     "logoAlt": "STORM Car Wash",
-    "language": "Language"
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "nav": {
+    "primary": "Primary",
+    "home": "Home",
+    "prices": "Prices",
+    "gallery": "Gallery",
+    "location": "Location",
+    "contact": "Contact",
+    "directions": "Directions"
+  },
+  "hero": {
+    "kicker": "Storm car wash",
+    "titleLine1": "A clean car.",
+    "titleLine2": "No compromise.",
+    "availability": "Self-service · 24 hours",
+    "location": "Kazanlak · on the road to Ovoshtnik",
+    "directions": "Directions",
+    "seePrices": "See prices",
+    "imageAlt": "A wet dark car in a car-wash bay, unbranded",
+    "factBays": "5 self-service bays · 24 hours",
+    "factStaffed": "2 staffed bays · 08:00–17:00",
+    "factPay": "€0.50 / €1 / €2 coins or card"
   },
   "openNow": {
     "staffedOpen": "Team on site until {close}",
     "staffedClosed": "Team finished — bays still open",
     "selfServiceAlways": "Self-service is open"
   },
-  "hero": {
-    "headline": "Open at 3 in the morning.",
-    "subline": "Self-service 24 hours · Kazanlak",
-    "directions": "Directions"
-  },
   "price": {
     "heroAmount": "€{amount}",
     "everyProgram": "every program"
   },
+  "prices": {
+    "kicker": "Prices",
+    "heading": "Eight programs on the panel.",
+    "lead": "Most are €1.00. Pay and start.",
+    "payment": "Pay with €0.50 / €1 / €2 coins or by card.",
+    "program": "Program",
+    "staffedHeading": "Staff-assisted service",
+    "staffedLine": "{open}–{close}"
+  },
+  "gallery": {
+    "kicker": "Gallery",
+    "heading": "The place.",
+    "lead": "The real yard in Kazanlak.",
+    "courtyard": "Yard at STORM Car Wash in Kazanlak",
+    "facade": "STORM Car Wash building facade",
+    "bays": "Self-service wash bays",
+    "panel": "Self-service program control panel",
+    "vacuum": "Vacuum station beside the bays",
+    "facadeWide": "Building and vacuum canopy",
+    "courtyardAngle": "Yard looking toward the bays and canopy"
+  },
+  "place": {
+    "kicker": "Location",
+    "heading": "Come in.",
+    "mapTitle": "Map of STORM Car Wash in Kazanlak",
+    "openMaps": "Open in Google Maps",
+    "selfServiceLabel": "Self-service",
+    "selfServiceHours": "24 hours",
+    "staffedLabel": "Staff service",
+    "facebook": "Facebook"
+  },
   "programs": {
-    "pre-wash": {
-      "name": "Pre-wash",
-      "detail": "high-pressure detergent"
-    },
-    "touchless-gel": {
-      "name": "Touchless gel",
-      "detail": ""
-    },
-    "turbo-foam": {
-      "name": "Turbo foam",
-      "detail": ""
-    },
-    "rinse": {
-      "name": "Rinse",
-      "detail": ""
-    },
-    "nano-wax": {
-      "name": "Nano wax",
-      "detail": ""
-    },
-    "short-water": {
-      "name": "Short water",
-      "detail": ""
-    },
-    "multi-wash": {
-      "name": "Multi wash",
-      "detail": "water – detergent – water"
-    },
-    "gloss-osmosis": {
-      "name": "Gloss – osmosis",
-      "detail": ""
-    }
+    "pre-wash": { "name": "Pre-wash", "detail": "" },
+    "touchless-gel": { "name": "Touchless gel", "detail": "" },
+    "turbo-foam": { "name": "Turbo foam", "detail": "" },
+    "rinse": { "name": "Rinse", "detail": "" },
+    "nano-wax": { "name": "Nano wax", "detail": "" },
+    "short-water": { "name": "Short water", "detail": "" },
+    "multi-wash": { "name": "Multi wash", "detail": "" },
+    "gloss-osmosis": { "name": "Gloss – osmosis", "detail": "" }
   },
   "paths": {
     "selfService": {
@@ -80,12 +100,13 @@
   },
   "footer": {
     "facebook": "Facebook",
-    "language": "Language"
+    "language": "Language",
+    "copyright": "STORM Car Wash"
   },
   "hours": {
     "selfServiceLabel": "Self-service",
-    "staffedLabel": "With team",
-    "always": "24 hours, every day",
+    "staffedLabel": "Staff service",
+    "always": "24 hours",
     "range": "{open}–{close}",
     "daysUnconfirmed": "days of the week still unconfirmed"
   },

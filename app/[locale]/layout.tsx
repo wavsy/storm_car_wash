@@ -5,11 +5,11 @@ import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/next";
 import { commissioner, geologica } from "@/lib/fonts";
 import { routing, type Locale } from "@/i18n/routing";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import { SkipLink } from "@/components/SkipLink";
 import { JsonLd } from "@/components/JsonLd";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { getTranslations } from "next-intl/server";
 
 type Props = {
@@ -22,6 +22,11 @@ export function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+export const viewport: Viewport = {
+  themeColor: "#070B14",
+  colorScheme: "dark",
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -56,7 +61,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       lang={locale}
       className={`${geologica.variable} ${commissioner.variable}`}
     >
-      <body className="flex min-h-dvh flex-col antialiased">
+      <body className="flex min-h-dvh flex-col bg-ink antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <JsonLd locale={locale} />
           <SkipLink />
