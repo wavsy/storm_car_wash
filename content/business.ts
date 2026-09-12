@@ -17,6 +17,7 @@ export const business = {
   phone: {
     display: "089 672 2385",
     tel: "+359896722385",
+    viber: "viber://chat?number=359896722385",
   },
   email: null as Pending<string>,
   postalAddress: null as Pending<string>,

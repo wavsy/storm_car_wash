@@ -83,6 +83,12 @@ export async function LocationSection() {
               {t("call")}
             </a>
             <a
+              href={business.phone.viber}
+              className="inline-flex min-h-11 items-center justify-center border border-steel/40 px-5 text-[13px] font-medium tracking-[0.14em] text-foam uppercase transition-colors duration-200 hover:border-cyan hover:text-cyan"
+            >
+              {t("viber")}
+            </a>
+            <a
               href={business.facebookUrl}
               target="_blank"
               rel="noreferrer"
