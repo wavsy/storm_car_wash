@@ -59,10 +59,29 @@ export async function LocationSection() {
                 {hours.staffed.open}–{hours.staffed.close}
               </dd>
             </div>
+            <div>
+              <dt className="text-[11px] tracking-[0.2em] text-cyan uppercase">
+                {t("phoneLabel")}
+              </dt>
+              <dd className="mt-1">
+                <a
+                  href={`tel:${business.phone.tel}`}
+                  className="font-heading text-[22px] tracking-[-0.03em] text-foam hover:text-cyan"
+                >
+                  {business.phone.display}
+                </a>
+              </dd>
+            </div>
           </dl>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <MapsButton label={t("openMaps")} />
+            <a
+              href={`tel:${business.phone.tel}`}
+              className="inline-flex min-h-11 items-center justify-center border border-steel/40 px-5 text-[13px] font-medium tracking-[0.14em] text-foam uppercase transition-colors duration-200 hover:border-cyan hover:text-cyan"
+            >
+              {t("call")}
+            </a>
             <a
               href={business.facebookUrl}
               target="_blank"

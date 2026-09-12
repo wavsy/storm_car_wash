@@ -3,6 +3,7 @@ export type SitePhoto = {
   width: number;
   height: number;
   altKey: string;
+  objectClass?: string;
 };
 
 export const galleryPhotos = [
@@ -37,6 +38,13 @@ export const galleryPhotos = [
     altKey: "vacuum",
   },
   {
+    src: "/storm/vacuum-unit.jpg",
+    width: 768,
+    height: 1024,
+    altKey: "vacuumUnit",
+    objectClass: "object-[center_38%]",
+  },
+  {
     src: "/storm/facade-wide.jpg",
     width: 1024,
     height: 576,
@@ -54,4 +62,10 @@ export const photos = {
   panel: galleryPhotos[3],
   bays: galleryPhotos[2],
   courtyard: galleryPhotos[0],
+} as const;
+
+export const pricePanelVisual = {
+  src: "/automotive/pay-panel.jpg",
+  width: 864,
+  height: 1152,
 } as const;

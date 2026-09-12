@@ -1,14 +1,12 @@
 import { getFormatter, getTranslations } from "next-intl/server";
-import Image from "next/image";
-import { programs } from "@/content/pricing";
-import { photos } from "@/content/photos";
+import { programs, vacuumPrograms } from "@/content/pricing";
 import { hours } from "@/content/hours";
+import { PriceStage } from "./PriceStage";
 
 export async function Prices() {
   const t = await getTranslations("prices");
   const names = await getTranslations("programs");
   const format = await getFormatter();
-  const photosT = await getTranslations("gallery");
 
   return (
     <section
@@ -59,6 +57,38 @@ export async function Prices() {
             })}
           </ol>
 
+          <div className="mt-12">
+            <p className="font-heading text-[18px] text-foam sm:text-[22px]">
+              {t("vacuumHeading")}
+            </p>
+            <p className="mt-2 text-[15px] text-steel">{t("vacuumLead")}</p>
+            <ol className="mt-6 divide-y divide-white/10 border-y border-white/10">
+              {vacuumPrograms.map((program) => {
+                const isException = program.price !== 1;
+                return (
+                  <li
+                    key={program.minutes}
+                    className="flex items-baseline justify-between gap-4 py-4"
+                  >
+                    <p className="font-heading text-[18px] tracking-[-0.03em] text-foam sm:text-[22px]">
+                      {t("vacuumMinutes", { minutes: program.minutes })}
+                    </p>
+                    <p
+                      className={`shrink-0 font-heading text-[22px] tracking-[-0.03em] sm:text-[28px] ${
+                        isException ? "text-cyan" : "text-foam"
+                      }`}
+                    >
+                      {format.number(program.price, {
+                        style: "currency",
+                        currency: "EUR",
+                      })}
+                    </p>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+
           <div className="mt-10 border-l-2 border-cyan pl-5">
             <p className="font-heading text-[18px] text-foam">
               {t("staffedHeading")}
@@ -72,19 +102,7 @@ export async function Prices() {
           </div>
         </div>
 
-        <div className="relative min-h-[240px] overflow-hidden border border-white/10 sm:min-h-[320px] lg:min-h-[720px]">
-          <Image
-            src={photos.panel.src}
-            alt={photosT("panel")}
-            fill
-            sizes="(max-width: 1024px) 100vw, 45vw"
-            className="object-cover"
-          />
-          <div
-            className="absolute inset-0 bg-linear-to-t from-ink/70 via-transparent to-ink/20"
-            aria-hidden
-          />
-        </div>
+        <PriceStage alt={t("panelAlt")} />
       </div>
     </section>
   );

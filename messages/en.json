@@ -47,7 +47,11 @@
     "payment": "Pay with €0.50 / €1 / €2 coins or by card.",
     "program": "Program",
     "staffedHeading": "Staff-assisted service",
-    "staffedLine": "{open}–{close}"
+    "staffedLine": "{open}–{close}",
+    "vacuumHeading": "Vacuum",
+    "vacuumLead": "Two stations beside the bays. Pay for minutes.",
+    "vacuumMinutes": "{minutes} min",
+    "panelAlt": "Payment and program panel, studio still"
   },
   "gallery": {
     "kicker": "Gallery",
@@ -58,6 +62,7 @@
     "bays": "Self-service wash bays",
     "panel": "Self-service program control panel",
     "vacuum": "Vacuum station beside the bays",
+    "vacuumUnit": "ASPIR vacuum unit in the yard",
     "facadeWide": "Building and vacuum canopy",
     "courtyardAngle": "Yard looking toward the bays and canopy"
   },
@@ -69,6 +74,8 @@
     "selfServiceLabel": "Self-service",
     "selfServiceHours": "24 hours",
     "staffedLabel": "Staff service",
+    "phoneLabel": "Phone",
+    "call": "Call",
     "facebook": "Facebook"
   },
   "programs": {

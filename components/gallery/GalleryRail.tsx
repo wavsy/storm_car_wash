@@ -30,7 +30,7 @@ export function GalleryRail({ alts }: { alts: string[] }) {
                 alt={alts[index] ?? ""}
                 fill
                 sizes="(max-width: 640px) 82vw, 640px"
-                className="object-cover"
+                className={`object-cover ${"objectClass" in photo ? photo.objectClass : ""}`}
               />
               <span
                 className="gallery-shine"

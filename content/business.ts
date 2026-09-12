@@ -14,7 +14,10 @@ export const business = {
     lat: 42.6096959,
     lng: 25.4075256,
   },
-  phone: null as Pending<string>,
+  phone: {
+    display: "089 672 2385",
+    tel: "+359896722385",
+  },
   email: null as Pending<string>,
   postalAddress: null as Pending<string>,
   legalName: null as Pending<string>,

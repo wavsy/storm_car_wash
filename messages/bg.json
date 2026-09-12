@@ -47,7 +47,11 @@
     "payment": "Плащане с монети €0,50 / €1 / €2 или карта.",
     "program": "Програма",
     "staffedHeading": "Обслужване от екип",
-    "staffedLine": "{open}–{close}"
+    "staffedLine": "{open}–{close}",
+    "vacuumHeading": "Прахосмукачка",
+    "vacuumLead": "Две станции до клетките. Плащаш за минути.",
+    "vacuumMinutes": "{minutes} мин",
+    "panelAlt": "Табло за плащане и програми, студиен кадър"
   },
   "gallery": {
     "kicker": "Галерия",
@@ -58,6 +62,7 @@
     "bays": "Клетки за самообслужване",
     "panel": "Табло с програмите за измиване",
     "vacuum": "Прахосмукачка до клетката",
+    "vacuumUnit": "Прахосмукачка ASPIR в двора",
     "facadeWide": "Сградата и зоната за прахосмукачки",
     "courtyardAngle": "Дворът към клетките и навеса"
   },
@@ -69,6 +74,8 @@
     "selfServiceLabel": "Самообслужване",
     "selfServiceHours": "24 часа",
     "staffedLabel": "Екип",
+    "phoneLabel": "Телефон",
+    "call": "Обади се",
     "facebook": "Facebook"
   },
   "programs": {

@@ -4,9 +4,7 @@ import { GalleryRail } from "./GalleryRail";
 
 export async function Gallery() {
   const t = await getTranslations("gallery");
-  const alts = galleryPhotos.map((photo) =>
-    t(photo.altKey as "courtyard" | "facade" | "bays" | "panel" | "vacuum" | "facadeWide" | "courtyardAngle"),
-  );
+  const alts = galleryPhotos.map((photo) => t(photo.altKey));
 
   return (
     <section

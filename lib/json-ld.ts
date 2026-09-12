@@ -13,6 +13,7 @@ export function localBusinessJsonLd(locale: Locale) {
     name,
     image: "/brand/logo-full.png",
     url: locale === "en" ? "/en" : "/",
+    telephone: business.phone.tel,
     sameAs: [business.facebookUrl],
     address: {
       "@type": "PostalAddress",

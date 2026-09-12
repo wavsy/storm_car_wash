@@ -21,6 +21,9 @@ export async function Footer() {
           <p className="text-foam">{t("copyright")}</p>
           <p>{city}</p>
           <p className="flex flex-wrap gap-4">
+            <a href={`tel:${business.phone.tel}`} className="hover:text-cyan">
+              {business.phone.display}
+            </a>
             <a href={business.mapsUrl} target="_blank" rel="noreferrer" className="hover:text-cyan">
               Google Maps
             </a>

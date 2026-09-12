@@ -34,6 +34,12 @@ export const exceptionPrograms = programs.filter(
   (program) => program.price !== DEFAULT_PROGRAM_PRICE,
 );
 
+export const vacuumPrograms = [
+  { minutes: 2, price: 0.5 },
+  { minutes: 4, price: 1 },
+  { minutes: 8, price: 2 },
+] as const;
+
 export type CarClass = "car" | "suv" | "van";
 
 export const carClasses: CarClass[] = ["car", "suv", "van"];
