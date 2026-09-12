@@ -12,6 +12,7 @@ import {
 } from "motion/react";
 import { heroVisual } from "@/content/hero";
 import { MapsButton } from "@/components/MapsButton";
+import { HeroRain } from "./HeroRain";
 
 type Props = {
   kicker: string;
@@ -83,6 +84,7 @@ export function HeroStage({
             sizes="100vw"
             className="object-cover object-[78%_58%] sm:object-[72%_55%] lg:object-[70%_52%]"
           />
+          {reduce ? null : <HeroRain />}
         </motion.div>
         <div className="hero-sheen hidden lg:block" aria-hidden />
         <div

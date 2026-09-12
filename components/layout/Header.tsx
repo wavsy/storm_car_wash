@@ -44,10 +44,13 @@ export function Header() {
     >
       <div className="mx-auto flex h-[4.25rem] max-w-[1440px] items-center gap-3 px-4 sm:h-[4.75rem] sm:px-6 lg:px-8">
         <Link
-          href="/"
-          className="flex min-w-0 items-center gap-2.5"
+          href={{ pathname: "/", hash: "hero" }}
+          className="flex shrink-0 items-center"
           aria-label={headerT("logoAlt")}
-          onClick={() => setOpen(false)}
+          onClick={() => {
+            setOpen(false);
+            document.getElementById("hero")?.scrollIntoView();
+          }}
         >
           <LogoLockup alt={headerT("logoAlt")} />
         </Link>
