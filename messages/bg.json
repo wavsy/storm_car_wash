@@ -109,7 +109,8 @@
   "footer": {
     "facebook": "Facebook",
     "language": "Език",
-    "copyright": "Автомивка СТОРМ"
+    "copyright": "Автомивка СТОРМ",
+    "madeBy": "Сайт от Wavsy"
   },
   "hours": {
     "selfServiceLabel": "Самообслужване",
