@@ -36,7 +36,13 @@ export async function Footer() {
               {t("facebook")}
             </a>
           </p>
-          <p>© {year}</p>
+          <p className="flex flex-wrap gap-2">
+            <span>© {year}</span>
+            <span aria-hidden>·</span>
+            <a href="https://wavsy.dev" target="_blank" rel="noopener" className="hover:text-cyan">
+              {t("madeBy")}
+            </a>
+          </p>
           <LanguageSwitch />
         </div>
       </div>
